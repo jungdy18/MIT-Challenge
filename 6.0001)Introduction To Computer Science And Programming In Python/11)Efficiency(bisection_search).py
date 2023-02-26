@@ -8,10 +8,3 @@ def bisection_search(list_name,target):
         return bisection_search(list_name[bisection+1:],target)
     else:
         return bisection_search(list_name[:bisection],target)
-
-
-a = ["a","c","b","x","y","t"]
-a.sort()
-t = bisection_search(a,"t")
-
-print(t)
